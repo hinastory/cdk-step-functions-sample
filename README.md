@@ -1,8 +1,36 @@
-# Welcome to your CDK TypeScript project!
+# Serverless Workflow Sample project for AWS
 
-This is a blank project for TypeScript development with CDK.
+This is AWS CDK and Step Functions and Lambda Sample project.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+- Simple Workflow(sfn-simple-state-machine)
+    - 3 step workflow with Lambda
+- Advanced WorkFlow(sfn-advanced-state-machine)
+    - Create S3 bucket
+    - Upload ZIP file
+    - List S3 Bucket
+    - Parallel Lambda Execution
+
+## prerequisite
+
+- AWS CLI Setup and Configuration
+- Node.js installation
+## Usage
+
+Setup
+
+```bash
+npm install
+```
+
+deploy
+
+```bash
+cdk deploy
+```
+
+open AWS Step Functions service and you can execute State Machine.
+
+Have fun!
 
 ## Useful commands
 
