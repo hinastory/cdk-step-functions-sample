@@ -1,14 +1,20 @@
 # Serverless Workflow Sample project for AWS
 
-This is AWS CDK and Step Functions and Lambda Sample project.
+This is AWS CDK with TypeScript and Step Functions and Lambda Sample project.
 
 - Simple Workflow(sfn-simple-state-machine)
     - 3 step workflow with Lambda
+    - helloTask is Lambda function
+
+![](images/sfn-simple-state-machine.png)
+
 - Advanced WorkFlow(sfn-advanced-state-machine)
     - Create S3 bucket
-    - Upload ZIP file
-    - List S3 Bucket
-    - Parallel Lambda Execution
+    - Upload ZIP file(@aws-cdk/aws-s3-deployment)
+    - List S3 Bucket(Lambda function)
+    - Parallel Lambda Execution(Map State)
+
+![](images/sfn-advanced-state-machine.png)
 
 ## prerequisite
 
